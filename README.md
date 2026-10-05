@@ -1,30 +1,41 @@
-# Kalimati Vegetable rates
+# Kalimati Rate
 
-An Api for vegetable rates of Kalimait, Nepal
+Daily vegetable and fruit prices from [Kalimati Market](https://kalimatimarket.gov.np/price), Nepal.
 
-## Installing
+## Setup
 
-```console
-npm install kalimati-rate
+```bash
+npm install
 ```
-## Usage 
+
+## Run API
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## Use as module
 
 ```js
-const Kalimati = require('kalimati-rate');
+const getPrices = require('./kalimati');
 
-Kalimati.retail().then((retail_price) => {
-    console.log(retail_price);
-});
-
-Kalimati.wholesale().then((wholesale_price) => {
-    console.log(wholesale_price);
-});
+getPrices().then(console.log);
 ```
 
-## Author
+## Response
 
-* **Aditya Thebe** - *@adityathebe* - [Blog](http://adityathebe.com)
+```json
+[
+  {
+    "commodity": "गोलभेडा ठूलो(नेपाली)",
+    "unit": "के.जी.",
+    "min": "रू ६०.००",
+    "max": "रू ७०.००",
+    "avg": "रू ६५.००"
+  }
+]
+```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Source: https://kalimatimarket.gov.np/price
