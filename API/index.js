@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
     .catch((err) => res.status(500).json({ error: err.message }));
 });
 
-app.listen(3000, () => console.log('http://localhost:3000'));
+app.listen(4020, () => console.log('http://localhost:4020'));

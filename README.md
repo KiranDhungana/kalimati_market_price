@@ -14,7 +14,7 @@ npm install
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:4020](http://localhost:4020)
 
 ## Use as module
 
@@ -29,11 +29,11 @@ getPrices().then(console.log);
 ```json
 [
   {
-    "commodity": "गोलभेडा ठूलो(नेपाली)",
-    "unit": "के.जी.",
-    "min": "रू ६०.००",
-    "max": "रू ७०.००",
-    "avg": "रू ६५.००"
+    "commodity": "Tomato Big(Nepali)",
+    "unit": "KG",
+    "min": 60,
+    "max": 70,
+    "avg": 65
   }
 ]
 ```
